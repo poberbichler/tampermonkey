@@ -1,11 +1,12 @@
 // ==UserScript==
 // @name       Twitterfall modification by IFET
 // @namespace  IFET
-// @version    0.2
+// @version    0.3.0
 // @description  used for ifet twitterfall
 // @match	http://www.twitterfall.com/*
 // @match	www.twitterfall.com/*
 // @match	twitterfall.com/*
+// @updateURL  https://raw.githubusercontent.com/poberbichler/tampermonkey/master/twitterfall.js
 // @copyright  I Fix Everything Team
 // ==/UserScript==
 
@@ -42,6 +43,7 @@
     var bodyElement = $('body');
     bodyElement.css('background-image', 'url("http://app.ehfg.org/twitterfall/logo.jpg")');
     bodyElement.css('overflow-x', 'hidden');
+    bodyElement.css('overflow', 'hidden');
 
     // append new speed and select it - twitterfall only checks the speed if the select is changed
     $('#speed').append('<option id="ifetspeed" value="5000">ifet</option>');
