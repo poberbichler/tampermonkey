@@ -42,6 +42,7 @@
     // set the new background
     var bodyElement = $('body');
     bodyElement.css('background-image', 'url("http://app.ehfg.org/twitterfall/logo.jpg")');
+    bodyElement.css('background-size', '100%');
     bodyElement.css('overflow-x', 'hidden');
     bodyElement.css('overflow', 'hidden');
 
